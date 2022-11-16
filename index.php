@@ -33,10 +33,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="content">
       <div class="todo-container">
         <h1>Ma Todo</h1>
-        <form class="todo-form" action="/" method="post">
+        <form class="todo-form" action="" method="POST">
           <input name="todo" type="text">
           <button class="btn btn-primary">Ajouter</button>
         </form>
+        <?php if ($error) : ?>
+          <p class="text-danger"><?= $error ?></p>
+        <?php endif; ?>
         <div class="todo-list"></div>
       </div>
     </div>
