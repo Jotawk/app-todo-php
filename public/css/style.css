@@ -122,3 +122,11 @@ footer {
   border-radius: 3px;
   padding: 10px 15px;
 }
+
+/* text */
+
+.text-danger {
+  color: var(--danger);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
