@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
         <ul class="todo-list">
           <?php foreach ($todos as $todo) : ?>
-            <li>
+            <li class="todo-item">
               <span class="todo-name"><?= $todo['name'] ?></span>
               <button class="btn btn-primary">Valider</button>
               <button class="btn btn-danger">Supprimer</button>

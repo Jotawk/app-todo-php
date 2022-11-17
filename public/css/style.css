@@ -1,8 +1,9 @@
 /* theme */
 :root {
   --font-family: 'Open Sans', sans-serif;
-  --primary: #8e44ad;
+  --primary: #0e91b1;
   --dark: #2c3e50;
+  --danger: rgb(223, 38, 38);
   --background-light: #ecf0f1;
   --text-color: #444;
   --text-color-light: #fff;
@@ -33,6 +34,11 @@ h1 {
   margin-bottom: 1rem;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .container {
   font-size: 1.6rem;
   min-height: 100vh;
@@ -58,6 +64,11 @@ h1 {
 
 .btn-primary {
   background-color: var(--primary);
+  color: var(--text-color-light);
+}
+
+.btn-danger {
+  background-color: var(--danger);
   color: var(--text-color-light);
 }
 
@@ -129,4 +140,20 @@ footer {
   color: var(--danger);
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.todo-item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.todo-name {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.todo-item:nth-child(odd) {
+  background-color: var(--background-light);
 }
