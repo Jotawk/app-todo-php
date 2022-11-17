@@ -72,6 +72,11 @@ ul {
   color: var(--text-color-light);
 }
 
+.btn-small {
+  padding: 5px 10px;
+  font-size: 1.6rem;
+}
+
 /* header */
 
 header {
