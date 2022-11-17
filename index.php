@@ -57,7 +57,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if ($error) : ?>
           <p class="text-danger"><?= $error ?></p>
         <?php endif; ?>
-        <div class="todo-list"></div>
+        <ul class="todo-list">
+          <?php foreach ($todos as $todo) : ?>
+            <li>
+              <span class="todo-name"><?= $todo['name'] ?></span>
+              <button class="btn btn-primary">Valider</button>
+              <button class="btn btn-danger">Supprimer</button>
+            </li>
+          <?php endforeach; ?>
+        </ul>
       </div>
     </div>
     <?php require_once 'includes/footer.php' ?>
