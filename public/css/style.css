@@ -162,3 +162,7 @@ footer {
 .todo-item:nth-child(odd) {
   background-color: var(--background-light);
 }
+
+.low-opacity {
+  opacity: 0.5;
+}

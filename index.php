@@ -59,10 +59,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <p class="text-danger"><?= $error ?></p>
         <?php endif; ?>
         <ul class="todo-list">
-          <?php foreach ($todos as $todo) : ?>
-            <li class="todo-item">
-              <span class="todo-name"><?= $todo['name'] ?></span>
-              <a href="/edit-todo.php?id=<?= $todo['id'] ?>">
+          <?php foreach ($todos as $t) : ?>
+            <li class="todo-item <?= $t['done'] ? 'low-opacity' : '' ?>">
+              <span class="todo-name"><?= $t['name'] ?></span>
+              <a href="./edit-todo.php?id=<?= $t['id'] ?>">
                 <button class="btn btn-primary btn-small">Valider</button>
               </a>
               <button class="btn btn-danger btn-small">Supprimer</button>
